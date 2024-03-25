@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+
+            <form class="row g-3">
+                <div class="col-md-12">
+                    <label for="celula" class="form-label">Célula</label>
+                    <select id="celula" class="form-select">
+                        <option selected>[SELECCIONE UNA CELULA]</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <label for="fechaCreacion" class="form-label">Fecha Creación</label>
+                    <input type="date" class="form-control" id="fechaCreacion">
+                </div>
+                <div class="col-md-12">
+                    <label for="nombreIglesia" class="form-label">Nombre Iglesia</label>
+                    <input type="text" class="form-control" id="nombreIglesia" placeholder="">
+                </div>
+                <div class="col-md-12">
+                    <label for="tema" class="form-label">Tema</label>
+                    <input type="text" class="form-control" id="tema" placeholder="">
+                </div>
+                <div class="col-md-12">
+                    <label for="referenciaBiblica" class="form-label">Referencia Bíblica</label>
+                    <input type="text" class="form-control" id="referenciaBiblica" placeholder="">
+                </div>
+                <div class="col-md-12">
+                    <label for="contenido" class="form-label">Contenido</label>
+                    <angular-editor [config]="editorConfig"></angular-editor>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Guadar</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-md-8">
+            <view-previou-component></view-previou-component>
+        </div>
+    </div>
+</div>
